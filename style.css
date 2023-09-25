@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    background: linear-gradient(red, rgb(232, 136, 62));
+    background-repeat: repeat-x;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+
+}
+
+#Total
+{
+    margin-left: 273px;
+}
+
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container
+{
+    height: 340px;
+    width: 700px;
+    padding: 50px;
+    border: 1px solid;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.Dice
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+input
+{
+    width: 80px;
+    margin-left: 30.5px;
+    text-align: right;
+}
+
+button
+{
+    width: 70px;
+    height: 70px;
+    margin-left: 264px;
+    border-color: black;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.shake
+{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake
+{
+    0%{
+        transform: rotate(8deg);
+    }
+    25%{
+        transform: rotate(-8deg);
+    }
+    50%{
+        transform: rotate(8deg);
+    }
+    75%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+}
