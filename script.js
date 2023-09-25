@@ -22,17 +22,19 @@ function roll(){
         let D4 = Math.floor(Math.random()*6);
         let D5 = Math.floor(Math.random()*6);
     
-        document.querySelector("#Dice-1").setAttribute("src", images[D1]);
-        document.querySelector("#Dice-2").setAttribute("src", images[D2]);
-        document.querySelector("#Dice-3").setAttribute("src", images[D3]);
-        document.querySelector("#Dice-4").setAttribute("src", images[D4]);
-        document.querySelector("#Dice-5").setAttribute("src", images[D5]);
-        document.querySelector("#Text-1").setAttribute("value", (D1+1));
-        document.querySelector("#Text-2").setAttribute("value", (D2+1));
-        document.querySelector("#Text-3").setAttribute("value", (D3+1));
-        document.querySelector("#Text-4").setAttribute("value", (D4+1));
-        document.querySelector("#Text-5").setAttribute("value", (D5+1));
-        document.querySelector("#Total").innerHTML = "Total: " + ((D1+1) + (D2+1) + (D3+1) + (D4+1) + (D5+1));
+        document.getElementById("Dice-1").src = images[D1];
+        document.getElementById("Dice-2").src = images[D2];
+        document.getElementById("Dice-3").src = images[D3];
+        document.getElementById("Dice-4").src = images[D4];
+        document.getElementById("Dice-5").src = images[D5];
+        
+        document.getElementById("Text-1").value = D1+1;
+        document.getElementById("Text-2").value = D2+1;
+        document.getElementById("Text-3").value = D3+1;
+        document.getElementById("Text-4").value = D4+1;
+        document.getElementById("Text-5").value = D5+1;
+        
+        document.getElementById("Total").textContent = "Total: " + ((D1+1) + (D2+1) + (D3+1) + (D4+1) + (D5+1));
         
         if (D1+1 == D2+1 && D1+1 == D3+1 && D1+1 == D4+1 && D1+1 == D5+1){
             window.alert("YAHTZEE!!!")
