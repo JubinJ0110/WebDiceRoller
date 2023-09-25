@@ -1,0 +1,14 @@
+{
+    "name": "YahtzeeDiceRoller",
+    "description": "Web app that rolls dice for the game Yahtzee",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Jubin Joseph",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.18.1"
+    }
+}
